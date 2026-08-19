@@ -1,7 +1,7 @@
 # design-behavior-details.md
 
-Project: [Project Name]
-Journey: [Journey Name]
+Project: AI Production Studio
+Journey: <TODO: Journey Name>
 
 Context Entry Point: `handoff-code-map.md`
 
@@ -32,3 +32,4 @@ This journey is complete for the current iteration when:
 ## Next
 
 1. [Next planned behavior]
+

@@ -1,7 +1,7 @@
 # handoff-brief.md
 
-Project: [Project Name]
-Journey: [Journey Name]
+Project: AI Production Studio
+Journey: <TODO: Journey Name>
 
 Context Entry Point: `handoff-code-map.md`
 
@@ -22,3 +22,4 @@ Capture only information that is temporary, unfinished, fragile, or important to
 ## Next
 
 1. [Next coding task]
+

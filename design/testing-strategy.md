@@ -1,6 +1,6 @@
 # testing-strategy.md
 
-Project: [Project Name]
+Project: AI Production Studio
 Journey: none, this is a main project file
 
 ## Purpose
@@ -14,3 +14,4 @@ Describe how humans and coding agents currently verify changes.
 ## Future Testing Strategy
 
 Document planned additions such as automated testing, device testing, visual verification, linting, type checking, or regression testing when useful.
+

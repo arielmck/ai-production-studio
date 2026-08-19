@@ -1,16 +1,16 @@
 # handoff-code-map.md
 
-Project: [Project Name]
-Journey: [Journey Name]
+Project: AI Production Studio
+Journey: <TODO: Journey Name>
 
 ## Context Loading Order
 
 1. This Handoff Code Map
-2. Project Design Scope & Purpose — `../../design-scope-and-purpose.md`
-3. Project Design Behavior Details — `../../design-behavior-details.md`
-4. Journey Design Scope & Purpose — `design-scope-and-purpose.md`
-5. Journey Design Behavior Details — `design-behavior-details.md`
-6. Handoff Brief, if present — `handoff-brief.md`
+2. Project Design Scope & Purpose ï¿½ `../../design-scope-and-purpose.md`
+3. Project Design Behavior Details ï¿½ `../../design-behavior-details.md`
+4. Journey Design Scope & Purpose ï¿½ `design-scope-and-purpose.md`
+5. Journey Design Behavior Details ï¿½ `design-behavior-details.md`
+6. Handoff Brief, if present ï¿½ `handoff-brief.md`
 7. Implementation files listed below
 
 ## Purpose
@@ -67,3 +67,4 @@ Avoid changes outside this journey unless they are required to support it.
 ## Design Decisions
 
 - [Important intentional decision that should not be casually changed]
+
