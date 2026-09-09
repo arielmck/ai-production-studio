@@ -68,6 +68,34 @@ restated, so there is nothing to fall out of date.
 - **Gemini.** Not established. Nothing has been designed for it, and inventing a
   system before use would produce rules with no evidence behind them.
 
+### Production Studio implementation rules
+
+`design/implementation-rules.md` is the single authority for Studio-wide
+implementation rules. Claude Code loads it through
+`C:\Users\ariel\.claude\rules\production-studio-implementation-rules.md`, whose
+only content is the absolute import of that canonical file. Codex has no
+reliable import mechanism, so `C:\Users\ariel\.codex\AGENTS.md` carries one
+marked synchronized copy; the existing project-conventions regression compares
+that copy with the authority.
+
+Projects do not copy Studio implementation rules. Their always-loaded cards
+hold only project-specific constraints or justified project exceptions.
+
+To change a Studio implementation rule, edit the canonical file, synchronize
+the marked Codex copy, and run the owning validation. A fresh coding-agent
+conversation is the safest way to guarantee newly changed standing instructions
+are loaded. Claude Cowork's current external user-scope-import limitation is
+outside this Claude Code delivery path.
+
+Codex's 24,576-byte standing-instruction limit is a hard ceiling, not a target.
+It covers everything this project requires a fresh Codex conversation to read:
+Codex global AGENTS.md, project AGENTS.md, and
+how-we-work/work-block-instructions.md. Preserve useful headroom beneath it.
+
+Claude's automatically delivered standing context is measured separately. This
+change establishes no Claude ceiling; record the measured post-change load as a
+baseline to reduce over time rather than an allowance to fill.
+
 ### Why the Claude files are centralized rather than copied per project
 
 The three files are loaded in every project on this machine from one location.
