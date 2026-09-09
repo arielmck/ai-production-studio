@@ -80,6 +80,14 @@ retain an unverified fallback; Git preserves removed code.
 Do not put run IDs, PIDs, tokens, transfer markers, timestamps, or other one-run
 values in standing instruction or design files.
 
+## Line endings belong to the repository
+
+Decide line endings once in the repository so every file on disk is identical
+whichever editor, agent, or shell tool wrote it last; with Git that is a
+`.gitattributes` rule rather than a per-file exception. A check that reads a
+file byte for byte must normalize endings before comparing or hashing, so no
+tool can break it by writing the endings it naturally writes.
+
 ## Enumerate before filtering
 
 To locate a file, window, element, process, or record, enumerate what exists
