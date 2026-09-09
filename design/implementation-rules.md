@@ -30,12 +30,17 @@ incomplete; never by term-matching audit.
 
 Every operational wait, poll, retry, or synchronization needs a real success
 condition and a deliberate non-success exit; none may trap indefinitely. Prefer
-observable readiness, progress, failure, and cancellation to elapsed time. Do
-not use `Sleep` or a fixed delay for readiness when a credible observable signal
-exists; use one only when the delay itself is required or no credible observable
-replacement exists. Where legitimate work and a stall would otherwise look
-alike for a long time, expose meaningful waiting, progress, or failure status
-where practical.
+observable readiness, progress, and failure to elapsed time. Where the program
+can observe that success will not occur without another action, detect that
+state and stop automatically. Cancellation is useful backup user control, and
+never by itself corrects a wait that can otherwise stay forever in a failed or
+stalled state the program could reasonably recognize. Consider a narrowly
+justified failsafe bound only where no credible observable failure or progress
+signal exists; this is not a blanket timeout policy. Do not use `Sleep` or a
+fixed delay for readiness when a credible observable signal exists; use one only
+when the delay itself is required or no credible observable replacement exists.
+Where legitimate work and a stall would otherwise look alike for a long time,
+expose meaningful waiting, progress, or failure status where practical.
 
 Long-lived event loops, servers, watchers, and observers are not operational
 waits.
@@ -43,9 +48,18 @@ waits.
 ## Correct the owner, not the symptom
 
 Fix a defect at its owner across the defect class, not only at the visible
-instance. Inspect equivalent and sibling paths and deterministic downstream
-behavior. Correct source mistakes instead of adding downstream recovery. One
-successful local patch is not completion evidence.
+instance, and correct, prevent, or reliably detect the condition that creates
+the failure before adding recovery from its consequences. Inspect equivalent and
+sibling paths and deterministic downstream behavior. A retry, fallback, timeout,
+cancellation path, escape hatch, restart, warning, or manual workaround does not
+count as fixing the defect when the underlying failure can reasonably be
+prevented or recognized at its source. Recovery may be secondary protection
+after the fundamental correction, or the deliberately chosen result only when the
+underlying defect is explicitly left in place because correcting it is
+impossible, unsupported, or not worth its cost. Do not convert `smallest
+solution` into `smallest patch after failure`: prefer the smallest solution that
+removes, prevents, or reliably detects the failure itself. One successful local
+patch is not completion evidence.
 
 ## Reuse existing behavior; add new behavior as a leaf
 
