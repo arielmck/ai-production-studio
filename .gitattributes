@@ -1,0 +1,9 @@
+# Line endings. Every file in the working tree is LF, whatever wrote it last.
+#
+# `core.autocrlf` is `true` here, so without this rule a `git checkout` or
+# `git restore` rewrites a file stored with line feed endings into
+# carriage-return line-feed endings, while every editor and shell tool used
+# here writes line feeds. A file's endings then depend on what touched it
+# last, which breaks anything that reads a file byte for byte.
+
+* text=auto eol=lf
