@@ -16,7 +16,10 @@ normal validation, direct changed-source/control-flow inspection, then broader
 existing checks only as needed. Probes, harnesses, mutation tests, and
 instrumentation are escalation and count as cost even when deleted. Before
 adding one, name the important unproved fact, why cheaper proof cannot establish
-it, and why the cost is justified.
+it, and why the cost is justified. Before running temporary executable proof or
+debugging code, use the language or tool's ordinary non-executing validation
+where one exists and applies: it costs nothing and catches the load-time class
+before the code can act or display anything.
 
 If proof/debugging becomes disproportionate to the change, or its machinery
 needs substantial debugging, stop and reassess before expanding it; simplify
@@ -87,6 +90,11 @@ them merely by writing their natural line endings.
 Enumerate candidates before narrowing when locating a file, window, element,
 process, or record. Do not guess identity before seeing the candidates.
 
+A destructive debugging or cleanup action against a live process or resource
+acts only on exact identities established before it runs. Do not select what to
+stop, delete, or overwrite by name, path, or pattern where the match could reach
+unrelated live state.
+
 ## Trace values through the whole path
 
 Before declaring a value change complete, follow every transform, store, render,
@@ -96,3 +104,12 @@ control size, and layout step that can affect the result.
 
 Comments state current behavior plus only the reason or history needed to
 understand it. Git owns obsolete history.
+
+## User-visible identifiers name their type
+
+A new user-visible identifier begins with its type: `ERR-` for an error or
+failure, `NOTICE-` for an informational notice, and `WARN-` only where a
+genuinely distinct warning state exists. The subsystem and number that identify
+it follow the type unchanged. This governs identifiers added from now on and is
+not authority to rename existing ones, which records, search terms, and written
+logs already name.
