@@ -65,8 +65,7 @@ restated, so there is nothing to fall out of date.
   memory holds remembered corrections and working context; it is deliberately
   not an authoritative layer, so a lesson worth keeping graduates into one of the
   three files above.
-- **Gemini.** Not established. Nothing has been designed for it, and inventing a
-  system before use would produce rules with no evidence behind them.
+- **Gemini.** Its interaction system is not established. Do not invent one in advance. Record Gemini's interaction model once it has been used seriously enough to know what it needs.
 
 ### Production Studio implementation rules
 
