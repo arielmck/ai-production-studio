@@ -105,6 +105,25 @@ already proved much of the required lifecycle. Starting from the closest
 working capability reduces duplicate research, parallel mechanisms, and
 avoidable redesign.
 
+**Agent memory is never the only owner of knowledge a future agent needs.** For
+anything an agent's memory holds, ask: if that memory were unavailable, could a
+future agent make a wrong decision, repeat a corrected mistake, redo meaningful
+work, or lose settled work? If so, the knowledge belongs in its existing
+authoritative stable owner, such as the design that governs the behavior, the
+instructions that govern the work, a Project Proven Solutions Library record
+that meets its evidence gate, or the architecture or environment description.
+Memory may keep a pointer to that owner or a convenience copy.
+
+When the user has deliberately postponed related work, its Deferred Work entry
+may temporarily hold the information needed to resume and complete that work.
+Deferred Work is not the permanent owner: when the deferred work is completed,
+harvest information with continuing value into its authoritative stable owner
+and delete the completed Deferred Work entry.
+
+This exists because an agent's memory serves that agent's own working context,
+while the knowledge the Production Studio depends on must reach every agent,
+project, and later session that needs it.
+
 ## Elements
 
 Elements are recurring concepts the Production Studio uses to keep human

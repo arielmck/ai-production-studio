@@ -63,8 +63,9 @@ restated, so there is nothing to fall out of date.
   permissions and writing style are different things, and mixing them would make
   the always-repeated writing rules carry authorization text. Claude Code's
   memory holds remembered corrections and working context; it is deliberately
-  not an authoritative layer, so a lesson worth keeping graduates into one of the
-  three files above.
+  not an authoritative layer, so a lesson worth keeping graduates into its
+  authoritative owner, which for Claude's own working and writing rules is one of
+  the three files above.
 - **Gemini.** Its interaction system is not established. Do not invent one in advance. Record Gemini's interaction model once it has been used seriously enough to know what it needs.
 
 ### Production Studio implementation rules
@@ -76,6 +77,11 @@ only content is the absolute import of that canonical file. Codex has no
 reliable import mechanism, so `C:\Users\ariel\.codex\AGENTS.md` carries one
 marked synchronized copy; the existing project-conventions regression compares
 that copy with the authority.
+
+`C:\Users\ariel\.codex\AGENTS.md` has no version history. It sits outside every
+repository, and `Claude-Global-File-History` does not copy it. Its synchronized
+block can be rebuilt from `design/implementation-rules.md`; its Codex-only
+sections have no other durable copy.
 
 Projects do not copy Studio implementation rules. Their always-loaded cards
 hold only project-specific constraints or justified project exceptions.
