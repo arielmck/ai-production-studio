@@ -50,7 +50,7 @@ Decide line endings once in repository policy, normally `.gitattributes`, not pe
 
 ## Enumerate before filtering
 
-Enumerate candidates before narrowing a file, window, element, process, or record; do not guess identity first. A destructive debugging or cleanup action against a live process or resource acts only on exact identities established before it runs, never on a name, path, or pattern that could match unrelated live state.
+Enumerate candidates before narrowing a file, window, element, process, or record; do not guess identity first. A destructive debugging or cleanup action against a live process or resource acts only on exact identities established before it runs, never on a name, path, or pattern that could match unrelated live state. Text quoted for later exact matching is an identity too. Before it becomes a literal or edit anchor, verify it against the file's own characters through an exact read rather than terminal-rendered output, and name any nonprinting or control character that affects the match. Rendering aids understanding; it never proves an anchor.
 
 ## Trace values through the whole path
 
