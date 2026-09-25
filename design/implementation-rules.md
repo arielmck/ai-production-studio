@@ -30,7 +30,7 @@ This applies both to Production Studio tooling and to workflows inside the produ
 
 ## Establish the need; reuse existing behavior
 
-Before calling something missing or needed, or offering a mechanism, inspect only the relevant current behavior and closest existing owner or solution enough to establish that a user need remains. Include accepted human prerequisites, refusals, guards, unsupported cases, and simple manual correction. If no agreement settles the case, present the choice among a simple refusal, user prerequisite, manual correction, or machinery rather than assuming machinery. If required reading is not permitted, call the point unestablished, not missing. If no need remains, state the actual mismatch instead of inventing a capability gap.
+Before calling something missing or needed, or offering a mechanism, inspect only the relevant current behavior and closest existing owner or solution enough to establish that a user need remains. Include accepted human prerequisites, refusals, guards, unsupported cases, and simple manual correction. Before designing recovery, retry, salvage, fallback, or other machinery, check whether a human prerequisite, refusal, manual correction, or fresh run of the original user action could replace it; if so and no agreement settles it, stop and raise the concrete circumstance as a Fast Track decision for Ariel to discuss with ChatGPT. If required reading is not permitted, call the point unestablished, not missing. If no need remains, state the actual mismatch instead of inventing a capability gap.
 
 If a need remains, prefer direct reuse, then a small refactor for reuse, then its proven mechanism with only the new leaf; a partial mismatch is not a reason to start over.
 

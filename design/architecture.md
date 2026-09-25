@@ -295,6 +295,27 @@ The current 24,576-byte Studio Codex ceiling could eventually serve as one
 architectural pressure against kernel growth rather than merely a recurring
 compression trigger. That use is not yet approved.
 
+### Evidence from the September 2026 Fast Track decision-point correction
+
+The Codex standing chain measured 24,549 of the 24,576-byte ceiling. One useful
+new recognition rule, a Fast Track decision point before designing recovery or
+other machinery, could not fit even after it was minimized to a net 172 bytes.
+Independent Claude Code and Codex investigations both found that the right
+immediate response was consolidation into existing owners, not weakening the
+rule. Detailed runtime, live-run preflight, and reassessment procedure moved
+from the AutoHotkey `AGENTS.md` into its debugging/proof protocol behind standing
+triggers, and operation-analysis detail the synchronized Studio rules already
+carry was removed. That cleanup gives breathing room; it does not make
+indefinite standing-context growth sustainable.
+
+The evidence supports distinguishing obligations that must govern before first
+reasoning from detailed procedures that can be read at a reliable later trigger,
+such as the moment before a restart, a live-run invitation, or a reassessment
+report. It approves no narrower delivery. Any future mechanism still needs
+proof of its timing, coverage of every supported entry path, actual context
+delivery and compaction behavior, identity, failure behavior, behavioral
+effectiveness, and economics.
+
 ### Capability reuse and the separate validity question
 
 Finding an existing capability is not sufficient by itself. A previously proven
