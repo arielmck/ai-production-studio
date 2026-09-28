@@ -6,7 +6,7 @@ Journey: <TODO: Journey Name>
 ## Context Loading Order
 
 1. This Handoff Code Map
-2. Project Design Scope & Purpose � `../../design-scope-and-purpose.md`
+2. Project Design Scope & Purpose � `../../project/design-scope-and-purpose.md`
 3. Production Studio Foundations � `../../design-behavior-details.md`
 4. Journey Design Scope & Purpose � `design-scope-and-purpose.md`
 5. Journey Design Behavior Details � `design-behavior-details.md`
