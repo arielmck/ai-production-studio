@@ -54,7 +54,10 @@ restated, so there is nothing to fall out of date.
     boundaries.
   - `output-styles\decision-first-plain-english.md` — how Claude writes:
     selection, ranking, density, completion reports, hazards, and handoffs.
-    Selected by the `outputStyle` field in `settings.json`.
+    Selected by the `outputStyle` field in `settings.json`. Its frontmatter line
+    `keep-coding-instructions: true` must never be lost: the field defaults to
+    `false`, and without it Claude Code drops its own software-engineering
+    instructions without showing anything to say so.
   - `communication-examples.md` — the paired examples and dated corrections
     behind those writing rules. Not loaded into any session; read when a rule
     needs a concrete example or a message has been rejected.
