@@ -44,9 +44,9 @@ Prove the path or remove it and let code assume correct conditions. Never retain
 
 Do not put run IDs, PIDs, tokens, transfer markers, timestamps, or other one-run values in standing instruction or design files.
 
-## Line endings belong to the repository
+## Text encoding and line endings belong to the repository
 
-Decide line endings once in repository policy, normally `.gitattributes`, not per-file exceptions. Byte-for-byte checks normalize endings before comparing/hashing so natural editor, agent, or shell endings do not break them.
+Repository text, including programmatically written text, is UTF-8 without BOM unless a specific consumer requires a BOM. Decide line endings once in repository policy, normally `.gitattributes`, not per-file exceptions. Byte-for-byte checks normalize endings before comparing/hashing so natural editor, agent, or shell endings do not break them.
 
 ## Enumerate before filtering
 
