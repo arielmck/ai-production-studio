@@ -34,6 +34,8 @@ Before calling something missing or needed, or offering a mechanism, inspect onl
 
 If a need remains, prefer direct reuse, then a small refactor for reuse, then its proven mechanism with only the new leaf; a partial mismatch is not a reason to start over.
 
+When the operating environment, supported use, or scope materially changes, do not assume the earlier solution still fits or should be discarded. Inspect it before designing the changed-environment result. Preserve useful reasoning, decisions, concepts, mechanisms, and reusable code while identifying assumptions and proven scope affected by the change. Revalidate those assumptions against the new environment, not every proved fact. Reuse what still fits; refactor or generalize what needs adaptation; replace or supersede only what no longer fits. Evidence outside its proven scope neither proves the expanded claim nor invalidates the earlier result within its proven scope.
+
 Before adding implementation/debugging machinery, identify each needed operation's owner, target, timing, status (designed, implemented, or deliberately unsettled), and regression coverage. Build a parallel mechanism only after proving the existing one cannot meet the need. If the difference is caller state, correct the caller and keep the shared mechanism. Edit a shared helper for one caller only when a leaf provably cannot work.
 
 ## Working or removed
