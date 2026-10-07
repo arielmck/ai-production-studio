@@ -39,6 +39,16 @@ the two differ and an agent needs the folder to find anything on disk.
   `C:\Users\ariel\Claude-Global-File-History`. Recoverable version history for
   the three authoritative Claude files described below.
 
+### Permanent project ports
+
+Every Production Studio project receives one permanent unique localhost port, whether or not the project currently runs a local development server. Once assigned, a port is never reassigned to another project.
+
+Ariel assigns and reviews ports in her human-only project/status/port record. Coding agents do not access that record and do not choose a project's port; when establishing a project whose port has not yet been supplied, they ask Ariel for it.
+
+Each project repository records its assigned port in the repository-root `Port-Durable-Unique-Never-Reused.txt`. That file contains only the port number and is the agent-visible durable record of the project's assignment.
+
+Ports 3000–3009 are reserved for Production Studio foundation, infrastructure, and test projects. Ordinary application projects begin at 3010.
+
 ### Where each agent's communication system lives
 
 Agent-independent principles are in `design-behavior-details.md`. What follows
@@ -167,8 +177,10 @@ chosen is too late to prevent unnecessary design.
 `INV-010A` in the AutoHotkey Project Proven Solutions Library
 (`C:\Users\ariel\Projects\1AutoHotkey\project-proven-solutions-library`)
 preserves the verified evidence and boundaries behind these concerns. This
-section preserves only the current proposed direction. Deferred Work `D-080`,
-`D-081`, and `D-082` in the AutoHotkey ledger own the future work.
+section preserves only the current proposed direction. Deferred Work `D-080`
+and `D-082` in the AutoHotkey ledger own the future work. The separate
+proven-solution validity question is settled in `design/implementation-rules.md`
+→ `Establish the need; reuse existing behavior`.
 
 ### Current synthesis
 
@@ -331,7 +343,36 @@ broader case while preserving its narrower proof, or using something different.
 
 That question should use the Project Proven Solutions Library's existing Proven
 Scope and Supersession model rather than inventing a competing evidence system.
-Its exact policy remains undesigned.
+Its policy is settled in `design/implementation-rules.md`
+→ `Establish the need; reuse existing behavior`.
+
+### Reuse choice after discovery
+
+*Preserved here on 2026-10-01 from a proposed reuse-discovery Evolving Practice
+(an EP-002 idea). It was not created as a separate Evolving Practice, because
+this section, D-080, and `Establish the need; reuse existing behavior` already
+own the problem space; `D-099` may revisit that shape.*
+
+Discovery comes before reuse choice: what is never found cannot be chosen.
+Once discovery has found an existing capability, the reuse choice can be to:
+
+- reuse all of the existing code;
+- reuse part of the code;
+- reuse the concept with different mechanics;
+- refactor existing code so both cases can share it;
+- reuse the existing owner, state model, proof or test pattern, refusal, or
+  human prerequisite;
+- reuse an analogous solution as design guidance rather than code;
+- deliberately not reuse it when the contexts materially differ.
+
+Maximum code sharing is not the objective. The objective is avoiding
+unnecessary recreation of knowledge or machinery while preserving clear
+ownership and appropriate architecture.
+
+Code maps are one possible discovery mechanism, not the definition or permanent
+center of reuse discovery. The importance of any particular discovery mechanism
+may rise or fall as repository structure, agents, indexing, search, memory,
+tooling, and the Production Studio evolve.
 
 ### Pilot before generalization
 
