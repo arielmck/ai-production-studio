@@ -16,7 +16,7 @@ Every operational wait, poll, retry, or synchronization needs a real success con
 
 ## Correct the owner, not the symptom
 
-Fix a defect at its owner across the defect class; prevent or reliably detect its cause before recovery. Inspect equivalent/sibling paths and deterministic downstream behavior. Retry, fallback, timeout, cancellation, escape, restart, warning, or manual workaround is not the fix when source correction/detection is reasonable. Recovery may be secondary, or the deliberate result only when root correction is impossible, unsupported, or not worth its cost. Prefer the smallest solution that removes, prevents, or reliably detects the failure, not the smallest patch after it. One local success is not completion evidence.
+Fix a defect at its owner across the defect class; prevent or reliably detect its cause before recovery. Inspect equivalent/sibling paths and deterministic downstream behavior. Retry, fallback, timeout, cancellation, escape, restart, warning, or manual workaround is not the fix when source correction/detection is reasonable. Recovery may be secondary, or the deliberate result only when root correction is impossible, unsupported, or not worth its cost. On failure, keep original information needed to finish manually. Prefer the smallest solution that removes, prevents, or reliably detects the failure, not the smallest patch after it. One local success is not completion evidence.
 
 ## Do not treat an intentional workflow result as a failure
 
