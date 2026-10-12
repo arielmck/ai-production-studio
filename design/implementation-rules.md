@@ -65,3 +65,16 @@ Comments state current behavior plus only reason/history needed to understand it
 ## User-visible identifiers name their type
 
 New user-visible identifiers begin with type: `ERR-` failure, `NOTICE-` information, `WARN-` only for a genuinely distinct warning. Subsystem and number follow unchanged. This governs new identifiers only and is not authority to rename existing ones, which records, search terms, and written logs already name.
+
+<!-- BEGIN MARKED SECTION: not synchronized to Codex; Codex reads it on demand -->
+## Preserve requirements through design and completion
+
+When materially revising a design, preserve all applicable settled requirements unless the user explicitly supersedes or excludes them. Approval of a revised document changes only the requirements the user explicitly agreed to change; omitted requirements remain binding. Reconcile affected obligations against the accepted design baseline, requirements agreed since that baseline, and subsequent explicit user decisions. Use the affected governing sections' history, not a broad historical audit. Report unresolved removed or weakened obligations before writing or installing the revision.
+
+Before declaring a journey or independently completable feature finished, reconcile its materially applicable retained requirements with the implementation and credible evidence. In the existing completion report, identify each material requirement or behavioral group, its implementation and affected consumers, the evidence establishing it, and the evidence's scope. Check consequential producer-to-consumer relationships, including relevant states left after failure, interruption, or cancellation and their later use across supported operating contexts. Establish the scope of guards relied upon. Apply the project's detailed revision and completion procedure where one exists.
+
+Credible proof may be mechanical or live under the existing proof requirements. State what it establishes and what remains limited or unfinished. Absence of live acceptance alone does not invalidate adequate machine proof, but any live acceptance required by the agreed completion contract remains outstanding until satisfied. Reporting an unfinished, unsupported, or unproved obligation does not authorize excluding it or declaring the affected feature complete.
+
+Reuse existing design, proof, and completion records. Bound the reconciliation to the affected requirements and consequential interactions. Do not introduce exhaustive historical audits, combinatorial testing, separate tracking artifacts, or extra routine investigation rounds.
+
+<!-- END MARKED SECTION -->

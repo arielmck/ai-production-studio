@@ -88,8 +88,16 @@ implementation rules. Claude Code loads it through
 `C:\Users\ariel\.claude\rules\production-studio-implementation-rules.md`, whose
 only content is the absolute import of that canonical file. Codex has no
 reliable import mechanism, so `C:\Users\ariel\.codex\AGENTS.md` carries one
-marked synchronized copy; the existing project-conventions regression compares
-that copy with the authority.
+marked synchronized copy of every rule except one. The authority marks its
+`Preserve requirements through design and completion` section as excluded from
+that copy, and Codex's authority instruction tells it to read that section from
+the authority before a material design change or a journey or feature
+completion. The existing project-conventions regression compares the copy with
+the authority minus that marked section, and fails if the marked section holds
+any other rule or the Codex instruction is missing. This one exception is not a
+general delivery mechanism; the bounded-delivery brainstorm below remains
+unapproved. The checks prove that Codex is told to read the section, not that
+it does.
 
 `C:\Users\ariel\.codex\AGENTS.md` has no version history. It sits outside every
 repository, and `Claude-Global-File-History` does not copy it. Its synchronized
@@ -100,7 +108,8 @@ Projects do not copy Studio implementation rules. Their always-loaded cards
 hold only project-specific constraints or justified project exceptions.
 
 To change a Studio implementation rule, edit the canonical file, synchronize
-the marked Codex copy, and run the owning validation. A fresh coding-agent
+the marked Codex copy unless the change lies inside the marked section, and run
+the owning validation. A fresh coding-agent
 conversation is the safest way to guarantee newly changed standing instructions
 are loaded. Claude Cowork's current external user-scope-import limitation is
 outside this Claude Code delivery path.
