@@ -6,8 +6,8 @@ Journey: none, this is a main project file
 ## Purpose
 
 How the parts of the Production Studio relate: which repository owns what, where
-each agent's communication configuration lives, and how the global Claude files
-are protected.
+agent communication configuration lives, and how selected Claude Code and Codex
+configuration files are backed up for human recovery.
 
 ## Technology Stack
 
@@ -35,13 +35,17 @@ the two differ and an agent needs the folder to find anything on disk.
 - **2hearforreal** — GitHub `hearforreal`, folder
   `C:\Users\ariel\Projects\2hearforreal`. The primary software product being
   developed through the studio.
-- **Claude-Global-File-History** — no GitHub remote, folder
-  `C:\Users\ariel\Claude-Global-File-History`. Recoverable version history for
-  the three authoritative Claude files described below.
+- **Backup-Files-Needed-In-Case-Of-New-Computer** — private GitHub
+  `arielmck/Backup-Files-Needed-In-Case-Of-New-Computer`, folder
+  `C:\Users\ariel\Projects\Backup-Files-Needed-In-Case-Of-New-Computer`.
+  A manually requested, off-computer human-recovery copy of the exact approved
+  Claude Code and Codex configuration selection. Its own README is the
+  authoritative file-selection and manual-restore guide. This unnumbered
+  special-purpose utility is not a normal Station project.
 
 ### Permanent project ports
 
-Every Production Studio project receives one permanent unique localhost port, whether or not the project currently runs a local development server. Once assigned, a port is never reassigned to another project.
+Every project that participates in normal Development Environment positions receives one permanent unique localhost port, even if it has no development server. An unnumbered special-purpose utility used only by a menu command, such as the configuration-backup repository, requires no port while it does not occupy a position. If a deliberate future workflow will put such a repository in a Station, assign its permanent port before establishment. Once a port is assigned, never reassign it to another project.
 
 Ariel assigns and reviews ports in her human-only project/status/port record. Coding agents do not access that record and do not choose a project's port; when establishing a project whose port has not yet been supplied, they ask Ariel for it.
 
@@ -99,10 +103,11 @@ general delivery mechanism; the bounded-delivery brainstorm below remains
 unapproved. The checks prove that Codex is told to read the section, not that
 it does.
 
-`C:\Users\ariel\.codex\AGENTS.md` has no version history. It sits outside every
-repository, and `Claude-Global-File-History` does not copy it. Its synchronized
-block can be rebuilt from `design/implementation-rules.md`; its Codex-only
-sections have no other durable copy.
+`C:\Users\ariel\.codex\AGENTS.md` sits outside ordinary project repositories.
+Its synchronized block can be rebuilt from `design/implementation-rules.md`,
+but its Codex-only sections need recovery protection. The private manual
+configuration-backup repository includes this file; Git history and publication
+exist only for versions captured when Ariel requests that backup.
 
 Projects do not copy Studio implementation rules. Their always-loaded cards
 hold only project-specific constraints or justified project exceptions.
@@ -133,31 +138,44 @@ authority and short pointers elsewhere is what keeps 20 to 50 projects
 consistent. Every repository that needs to mention the system names the file
 instead of summarizing it.
 
-### Claude-Global-File-History
+### Backup Files Needed in Case of a New Computer
 
-The three authoritative Claude files sit under `C:\Users\ariel\.claude`, outside
-every project repository, so nothing versioned them. They are edited by agents
-as well as by Ariel, which makes a bad automated edit the realistic threat: a
-good version could be overwritten with no way back to it.
+The private `Backup-Files-Needed-In-Case-Of-New-Computer` repository is Ariel's
+manual recovery archive for selected global Claude Code and Codex configuration.
+Its `README.md` holds the **single authoritative, as-of-dated source-file
+selection**, restoration paths, and anti-drift rules. The repository-owned backup
+command creates `Current/`, a permanent `Original-YYYY-MM-DD/`, and permanent
+`Monthly-YYYY-MM-DD/` sets on the first manual backup in each later month.
+Each set contains a generated `Files-Backed-Up.md` showing the exact selection
+captured and its original `%USERPROFILE%` locations. Git history preserves
+intervening changes and the evolution of the file selection.
 
-`snapshot.js` in that repository copies the three files and commits when any of
-them has changed. A `Stop` hook in `C:\Users\ariel\.claude\settings.json` runs it
-at the end of every Claude Code turn in every project, so a new version is
-committed within one turn of being written, before a later edit can replace it.
-When nothing has changed it reads the three files and exits without running git.
+One AutoHotkey Development Environment menu entry launches that command; AutoHotkey
+neither owns copying and Git publication nor schedules captures. There is no
+Claude Stop-hook archive, automatic Stop Dev Session publication, watcher,
+normal configuration fallback, or automated restoration. Live global files
+remain authoritative. File content and source selection may change between
+manual backups; that exposure is knowingly accepted. The backup's correct
+completion boundary is a verified complete copy and **confirmed private GitHub
+publication**, not a merely local copy or unconfirmed push.
 
-What it deliberately is not:
+Backup payload names are non-operational `.snapshot.txt` files whose bytes
+survive a fresh checkout unchanged. Unexpected source or repository material
+must be reported for investigation, never silently skipped or automatically
+published, cleaned or repaired. Provider credentials, memories, sessions,
+runtime state and secrets are excluded. Human restoration requires reviewing
+machine-specific paths and settings before returning files to live locations.
 
-- **Not a machine backup.** The history is on the same drive as the files, so
-  losing the machine loses both.
-- **Not a configuration source.** Nothing reads configuration from it. It exists
-  to restore a file that was damaged, using `git show <commit>:<path>` and a copy
-  back into `C:\Users\ariel\.claude`.
-- **Not complete.** A version created and overwritten by hand with no Claude Code
-  turn in between is never seen by the hook and is not captured. That limit was
-  accepted rather than answered with a permanently running watcher.
-- **Not extended to memory.** Claude Code's memory folder is not protected,
-  because memory is working context rather than authoritative configuration.
+The old archive's **Claude Stop-hook command** is removed from live
+`settings.json` after the replacement is ready and before the first permanent
+Original capture; unrelated hooks remain. Only after the new private GitHub
+backup is fully published, independently cloned and restoration is verified
+are the older local-only `Claude-Global-File-History` repository, obsolete
+script and historical copies deleted. Its commits are not migrated. Because this utility is not presently
+assigned a Development Environment position, it needs no permanent project port
+or `Latest-Implementing-Agent.txt`. The project-level AutoHotkey design governs
+normal numbered project discovery without forbidding future deliberate Station
+use of unnumbered special repositories.
 
 ## BRAINSTORM - Bounded Knowledge Delivery and Capability Discovery
 
