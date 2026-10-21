@@ -36,7 +36,7 @@ the two differ and an agent needs the folder to find anything on disk.
   `C:\Users\ariel\Projects\2hearforreal`. The primary software product being
   developed through the studio.
 - **Backup-Files-Needed-In-Case-Of-New-Computer** — private GitHub
-  `arielmck/Backup-Files-Needed-In-Case-Of-New-Computer`, folder
+  `arielmck/backup-files-needed-in-case-of-new-computer`, folder
   `C:\Users\ariel\Projects\Backup-Files-Needed-In-Case-Of-New-Computer`.
   A manually requested, off-computer human-recovery copy of the exact approved
   Claude Code and Codex configuration selection. Its own README is the
