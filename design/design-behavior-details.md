@@ -64,11 +64,12 @@ concepts are discussed together, use parallel forms so wording differences do
 not create false distinctions.
 
 For Project Proven Solutions Library record types, ordinary prose uses
-`KP`/`KP entry`, `INV`/`INV entry`, and `TECH`/`TECH entry`. If full words are
-genuinely necessary, use only `Known Problems (KP)`, `Investigations (INV)`, or
-`Techniques (TECH)`, with the acronym included every time. For singular grammar,
-use the acronym form such as `a KP`, `an INV`, or `a TECH entry` rather than
-inventing a singular spelled-out form.
+`KP`/`KP entry`, `INV`/`INV entry`, `TECH`/`TECH entry`, and `RECIPE`/`RECIPE entry`. If full words are
+genuinely necessary, use only `Known Problems (KP)`, `Investigations (INV)`,
+`Techniques (TECH)`, or `Test Harness Recipes (RECIPE)`, with the acronym
+included every time. For singular grammar, use the acronym form such as `a KP`,
+`an INV`, `a TECH entry`, or `a RECIPE entry` rather than inventing a singular
+spelled-out form.
 
 On the first use of the grouping concept within each section, write
 `Investigation Family (groups of related INVs)`. Later uses within that same
@@ -178,12 +179,13 @@ Hypotheses, proposed causes, candidate solutions, and other unproved material
 stay outside permanent Library records until the applicable evidence gate is
 met.
 
-The Library is the parent Element for three kinds of permanent record:
+The Library is the parent Element for four kinds of permanent record:
 
 - **KP** — one recurring problem, its proven causes, and its Proven Solutions.
 - **INV** — one time-intensive investigation, with what it established and what
   it ruled out.
 - **TECH** — one proven, reusable method.
+- **RECIPE** — one proven temporary verification setup, preserving its original purpose, complete success criteria, observed proof, and adaptable reconstruction guidance.
 
 The current detailed owner is
 `1AutoHotkey/project-proven-solutions-library/README.md` and the records governed
@@ -286,6 +288,14 @@ a TECH entry or its permanent supporting records.
 For agents: make the TECH entry easy to discover and reuse without duplicating
 the full evidence story. Preserve the complete durable proven knowledge in the
 appropriate permanent owner and make the TECH entry lead future agents to it.
+
+### RECIPE
+
+A RECIPE preserves a proven temporary test harness after its executable scaffolding is removed, so future work can recover useful verification without maintaining an obsolete framework. It preserves the original problem, complete success criteria, and the exact boundaries of what was and was not proved—not just test construction steps.
+
+A future agent independently establishes today's problem and success criteria, reconciles each with the historical baseline, and obtains approval for changes before freezing the current requirements. Changing code, tools, providers, and agent capabilities may justify a simpler or different test. The chosen proof must still cover every frozen requirement before implementation and again before success is claimed; requirements must not quietly shrink to fit the solution.
+
+A RECIPE requires valuable proof from an actually run reference harness, checked against the independently established original purpose and requirements; gaps remain explicitly unproven. A proposed harness or an unverified reconstruction stays in active work. The Library README owns the schema, admission, detailed sections, and verification rules; Studio Foundations does not duplicate them.
 
 ### TMP — Temporary Working Document
 

@@ -289,7 +289,8 @@ hand-maintained capability catalog:
 - Intended-behavior headings and UA titles name visible behaviors, agreements,
   prerequisites, refusals, and recovery boundaries.
 - Code maps identify implementation once the behavior is known.
-- KP, INV, and TECH metadata expose proven evidence and reusable methods.
+- KP, INV, TECH, and RECIPE metadata expose proven evidence, reusable methods,
+  and proven test-harness recipes.
 - Existing generators, templates, helpers, checks, and project-template assets
   hold reusable capability.
 
@@ -557,7 +558,7 @@ kernel's discovery gate would be the fallback.
   what exists, including agreements and refusals. Both `INV-010A` incidents
   needed exactly that: the working notice and the discard behavior.
 - **Behavior to implementation and evidence.** The matching code-map entry and
-  the KP, INV, and TECH records it names, searched through front-matter
+  the KP, INV, TECH, and RECIPE records it names, searched through front-matter
   `search_terms` and `applies_to`.
 - **Across projects.** Library records with `scope: studio`,
   `candidates-for-reuse-across-projects/`, and `project-template`.
