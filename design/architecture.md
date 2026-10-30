@@ -123,6 +123,10 @@ Codex's 24,576-byte standing-instruction limit is a hard ceiling, not a target.
 It covers everything this project requires a fresh Codex conversation to read:
 Codex global AGENTS.md, project AGENTS.md, and
 how-we-work/work-block-instructions.md. Preserve useful headroom beneath it.
+Before proposing changes to these budgeted instructions, measure their actual
+combined bytes and remaining headroom, and inspect existing regressions that
+read each affected file for exact required literals, counts, or placement.
+Preserve protected contracts; do not compress technical requirements to fit.
 
 Claude's automatically delivered standing context is measured separately. This
 change establishes no Claude ceiling; record the measured post-change load as a
