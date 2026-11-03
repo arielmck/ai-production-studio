@@ -40,7 +40,13 @@ When environment, supported use or scope changes materially, inspect the existin
 
 Before adding machinery, identify each operation's owner, target, timing, status (designed/implemented/deliberately unsettled) and regression coverage. Prove existing behavior cannot serve before adding a parallel path. Correct caller-only state at caller; change a shared helper for one caller only if its leaf provably cannot work.
 
-## Working or removed
+## Agents and tools evolve rapidly; adapt the identification, not just the instance
+
+Every external agent and tool this Studio drives — ChatGPT, Codex, Claude, VS Code, Chrome, and others — changes its own interface and behavior on its own schedule, often without notice. This is the expected, ordinary condition of building on them, not an exceptional risk to flag before acting.
+
+When such a change breaks a rule this Studio uses to identify or act on something (an accessibility id, a class name, a control's name, a page structure), and a materially better distinguishing signal exists, correct the identification rule itself, the same way any other defect is corrected at its owner. Do not stop at a one-off manual workaround for the single instance that surfaced the break while leaving the rule broken for the next one. Do not frame the correction as a special reopening of a prior decision merely because an earlier record accepted the old limitation as best available at the time; that acceptance was bounded by the absence of a working distinguishing signal, not a permanent commitment to leave the rule uncorrected once one exists.
+
+Report what changed and what the correction now relies on. Do not add a caution that the correction might itself need future correction as though that were a weakness specific to this fix; it is a standing fact about every identification rule built on an external interface this Studio does not control, true before the correction and after it, and does not need restating each time.
 
 Prove the path or remove it and let code assume correct conditions. Never retain an unverified fallback; Git preserves removed code.
 
