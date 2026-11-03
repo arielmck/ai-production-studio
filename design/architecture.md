@@ -119,6 +119,19 @@ conversation is the safest way to guarantee newly changed standing instructions
 are loaded. Claude Cowork's current external user-scope-import limitation is
 outside this Claude Code delivery path.
 
+**Outstanding synchronization obligation (2026-11-03).** The "Establish the
+need; reuse existing behavior" section's four Negligible/Small-first and
+architectural-improvement paragraphs and its reconciled reuse sentence are
+installed in the canonical file but not yet synchronized to Codex's global
+`AGENTS.md`: Codex's standing-instruction total already sat within 197 bytes of
+its 24,576-byte ceiling, short of the roughly 3.4 KB this addition needs, and no
+safe, meaning-preserving reduction was available without altering the approved
+wording or another existing obligation. Ariel explicitly accepted the resulting
+`Test-Regression-Project-Conventions.ps1` synchronization failure for this one
+documentation commit. Codex does not yet receive this rule. Resolve by freeing
+capacity (consolidation, compression, or a delivery-mechanism change) and then
+completing the synchronized copy and validation this section already requires.
+
 Codex's 24,576-byte standing-instruction limit is a hard ceiling, not a target.
 It covers everything this project requires a fresh Codex conversation to read:
 Codex global AGENTS.md, project AGENTS.md, and
