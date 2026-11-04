@@ -146,6 +146,10 @@ changes intended behavior, what we intend to code, what software needs to
 automate, protect, detect, recover from, or support, or what machinery can be
 omitted or removed.
 
+A UA records Ariel's decision, not a technical recipe. State what she agrees to do, avoid, prefer, tolerate, or handle herself, the condition under which it applies, and the strength and limits of that agreement. A UA may refer to the expected visible result to make the choice understandable, but an accepted manual fallback does not turn a repeatedly failing required result into normal success.
+
+Do not put implementation prescriptions in a UA or its Design consequence: provider or interface internals, code identifiers, APIs, commands issued by automation, control names, timing or retry techniques, or other mechanisms chosen for current tools. Keep technical design, safeguards and proof in the applicable behavior Design, coding-agent instructions, or other existing technical owner. Name an exact shortcut, command or duration only when it is itself part of what Ariel personally agreed to do or experience, not merely how the software currently works. Changing a technical method does not itself reopen the UA unless the human agreement or promised result changes.
+
 A UA commonly arises during design, but it may also become important during
 implementation, debugging, refactoring, cleanup, or simplification. The actual
 UA lives with the current authoritative behavior it governs so the human
