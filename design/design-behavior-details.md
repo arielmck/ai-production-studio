@@ -125,6 +125,20 @@ This exists because an agent's memory serves that agent's own working context,
 while the knowledge the Production Studio depends on must reach every agent,
 project, and later session that needs it.
 
+**Check a document's authority before considering changes.** When a document
+becomes a candidate for creation, addition, correction, removal or
+reconciliation, consult its governing standard before formulating or
+recommending a proposed change; for an existing document, also read its opening
+and relevant context, while for a new document use the prescribed opening and
+template. Existing text does not acquire authority merely by being present:
+report misplaced proposed or existing information to the user, identify its
+proper owner, and preserve unique information until its disposition is
+authorized under the document's lifecycle.
+
+This prevents routine reconciliation from turning an accidentally copied
+statement into a second authority. Authorized changes to the actual owner remain
+permitted.
+
 ## Elements
 
 Elements are recurring concepts the Production Studio uses to keep human
