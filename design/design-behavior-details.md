@@ -331,6 +331,7 @@ TMP merely because they are temporary; the current AutoHotkey process uses
 `DBG-` for that debugging role.
 
 In the current AutoHotkey pilot, the detailed `TMP-` prefix rules belong in
-`design/project/reuse-considerations.md`, while each workflow's own TMP lifecycle
-belongs in its authoritative behavior owner. Foundations does not define a
-universal retention or deletion policy for TMP files.
+`design/README.md` → `MASTER- and TMP- file name prefixes`, while each
+workflow's own TMP lifecycle belongs in its authoritative behavior owner.
+Foundations does not define a universal retention or deletion policy for TMP
+files.

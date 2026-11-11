@@ -588,8 +588,7 @@ kernel's discovery gate would be the fallback.
 
 The Studio already promotes knowledge when something repeats: a KP entry
 requires `repeated`; a second journey depending on a code surface triggers a
-cross-journey code map; several similar bounded tasks justify a fast-lane file;
-project completion moves candidates into
+cross-journey code map; project completion moves candidates into
 `candidates-for-reuse-across-projects/`. The missing step is graduating a
 repeated rule into a helper, generator, template, or check that later projects
 inherit, and retiring the prose once they do. The question "what is the
