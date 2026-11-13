@@ -127,9 +127,10 @@ canonical implementation rules contain four newer
 `Establish the need; reuse existing behavior` paragraphs concerning
 Negligible/Small-first design and architectural improvement, an expanded
 condition permitting demonstrably better architectural replacements after
-required investigation, review and approval, and the
+required investigation, review and approval, the
 `Agents and tools evolve rapidly; adapt the identification, not just the instance`
-section. The global Codex `AGENTS.md` copy has not been synchronized because
+section, and the second `User-visible identifiers name their type` paragraph,
+on identifiers and messages. The global Codex `AGENTS.md` copy has not been synchronized because
 the combined standing instructions lack sufficient capacity under the existing
 24,576-byte limit. Ariel has deliberately deferred resolving that capacity and
 delivery problem to D-080/D-082. Until then, Codex can receive older standing
