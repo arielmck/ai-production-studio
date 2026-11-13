@@ -84,6 +84,8 @@ Comments state current behavior plus only reason/history needed to understand it
 
 New user-visible identifiers begin with type: `ERR-` failure, `NOTICE-` information, `WARN-` only for a genuinely distinct warning. Subsystem and number follow unchanged. This governs new identifiers only and is not authority to rename existing ones, which records, search terms, and written logs already name.
 
+An identifier identifies a stable reporting condition, not necessarily a unique underlying cause. Messages should describe the actual outcome, including relevant partial success or uncertainty, and any necessary next action. Preserve sufficient diagnostic evidence to distinguish causes. Routine status messages do not automatically need identifiers. Each project chooses its own presentation, lookup, and logging mechanisms.
+
 <!-- BEGIN MARKED SECTION: not synchronized to Codex; Codex reads it on demand -->
 ## Preserve requirements through design and completion
 
