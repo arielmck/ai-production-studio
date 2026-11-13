@@ -91,17 +91,20 @@ restated, so there is nothing to fall out of date.
 implementation rules. Claude Code loads it through
 `C:\Users\ariel\.claude\rules\production-studio-implementation-rules.md`, whose
 only content is the absolute import of that canonical file. Codex has no
-reliable import mechanism, so `C:\Users\ariel\.codex\AGENTS.md` carries one
-marked synchronized copy of every rule except one. The authority marks its
-`Preserve requirements through design and completion` section as excluded from
-that copy, and Codex's authority instruction tells it to read that section from
-the authority before a material design change or a journey or feature
-completion. The existing project-conventions regression compares the copy with
-the authority minus that marked section, and fails if the marked section holds
-any other rule or the Codex instruction is missing. This one exception is not a
-general delivery mechanism; the bounded-delivery brainstorm below remains
-unapproved. The checks prove that Codex is told to read the section, not that
-it does.
+reliable import mechanism, so `C:\Users\ariel\.codex\AGENTS.md` carries a
+marked synchronized copy of the authority's rules outside its marked on-demand
+section. That section currently contains
+`Preserve requirements through design and completion` and
+`Investigate fully, then challenge and reassess the whole solution`. Codex's
+authority instruction directs it to consult that section before a material
+design change or a journey or feature completion. The existing
+project-conventions regression checks the marked-section structure, compares
+the synchronized copy with the authority excluding that entire section, and
+checks the Codex authority instruction. It does not restrict the on-demand
+section to one rule. This exception is not a general delivery mechanism; the
+bounded-delivery brainstorm below remains unapproved. The checks establish
+instruction presence and synchronization, not that Codex follows an
+instruction.
 
 `C:\Users\ariel\.codex\AGENTS.md` sits outside ordinary project repositories.
 Its synchronized block can be rebuilt from `design/implementation-rules.md`,
@@ -119,18 +122,22 @@ conversation is the safest way to guarantee newly changed standing instructions
 are loaded. Claude Cowork's current external user-scope-import limitation is
 outside this Claude Code delivery path.
 
-**Outstanding synchronization obligation (2026-11-03).** The "Establish the
-need; reuse existing behavior" section's four Negligible/Small-first and
-architectural-improvement paragraphs and its reconciled reuse sentence are
-installed in the canonical file but not yet synchronized to Codex's global
-`AGENTS.md`: Codex's standing-instruction total already sat within 197 bytes of
-its 24,576-byte ceiling, short of the roughly 3.4 KB this addition needs, and no
-safe, meaning-preserving reduction was available without altering the approved
-wording or another existing obligation. Ariel explicitly accepted the resulting
-`Test-Regression-Project-Conventions.ps1` synchronization failure for this one
-documentation commit. Codex does not yet receive this rule. Resolve by freeing
-capacity (consolidation, compression, or a delivery-mechanism change) and then
-completing the synchronized copy and validation this section already requires.
+**Deferred Codex synchronization (2026-11-03; reaffirmed 2026-11-12).** The
+canonical implementation rules contain four newer
+`Establish the need; reuse existing behavior` paragraphs concerning
+Negligible/Small-first design and architectural improvement, an expanded
+condition permitting demonstrably better architectural replacements after
+required investigation, review and approval, and the
+`Agents and tools evolve rapidly; adapt the identification, not just the instance`
+section. The global Codex `AGENTS.md` copy has not been synchronized because
+the combined standing instructions lack sufficient capacity under the existing
+24,576-byte limit. Ariel has deliberately deferred resolving that capacity and
+delivery problem to D-080/D-082. Until then, Codex can receive older standing
+guidance, and the project-conventions synchronization comparison remains an
+intentional, truthful failure. That comparison runs after the other checks so
+this accepted limitation does not prevent unrelated project conventions from
+being checked. This deferral does not authorize weakening existing rules,
+altering Codex's global instructions, or activating D-080/D-082.
 
 Codex's 24,576-byte standing-instruction limit is a hard ceiling, not a target.
 It covers everything this project requires a fresh Codex conversation to read:

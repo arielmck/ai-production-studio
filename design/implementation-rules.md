@@ -56,6 +56,8 @@ When such a change breaks a rule this Studio uses to identify or act on somethin
 
 Report what changed and what the correction now relies on. Do not add a caution that the correction might itself need future correction as though that were a weakness specific to this fix; it is a standing fact about every identification rule built on an external interface this Studio does not control, true before the correction and after it, and does not need restating each time.
 
+## Working or removed
+
 Prove the path or remove it and let code assume correct conditions. Never retain an unverified fallback; Git preserves removed code.
 
 ## Durable files contain no one-run state
