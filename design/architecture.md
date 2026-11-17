@@ -12,7 +12,7 @@ configuration files are backed up for human recovery.
 ## Technology Stack
 
 - Documentation, in Markdown. This repository holds no product code.
-- Per-project stacks are recorded in each project's own `architecture.md`.
+- Each project's technology stack is recorded in that project's authorized project documentation, whether its established owner is an architecture document or a deliberately adopted technology-and-environment document; this Studio repository does not require an additional file in every project.
 
 ## Project Architecture
 
