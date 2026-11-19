@@ -154,37 +154,9 @@ workflow.
 
 ### UA — User Agreement
 
-A User Agreement records something Ariel deliberately agrees to do, avoid,
-accept, prefer, tolerate, or handle herself when that agreement materially
-changes intended behavior, what we intend to code, what software needs to
-automate, protect, detect, recover from, or support, or what machinery can be
-omitted or removed.
+User Agreements record deliberate human/software tradeoffs: a person explicitly agrees to take responsibility for an action, refrain from one, handle an exceptional situation manually, or accept a defined limitation, and the related Design identifies the software responsibilities or design decisions this agreement changes. The UA records the human's informed choice, not a technical recipe or an agent's assumption.
 
-A UA records Ariel's decision, not a technical recipe. State what she agrees to do, avoid, prefer, tolerate, or handle herself, the condition under which it applies, and the strength and limits of that agreement. A UA may refer to the expected visible result to make the choice understandable, but an accepted manual fallback does not turn a repeatedly failing required result into normal success.
-
-Do not put implementation prescriptions in a UA or its Design consequence: provider or interface internals, code identifiers, APIs, commands issued by automation, control names, timing or retry techniques, or other mechanisms chosen for current tools. Keep technical design, safeguards and proof in the applicable behavior Design, coding-agent instructions, or other existing technical owner. Name an exact shortcut, command or duration only when it is itself part of what Ariel personally agreed to do or experience, not merely how the software currently works. Changing a technical method does not itself reopen the UA unless the human agreement or promised result changes.
-
-A UA commonly arises during design, but it may also become important during
-implementation, debugging, refactoring, cleanup, or simplification. The actual
-UA lives with the current authoritative behavior it governs so the human
-agreement and its design consequence cannot silently drift apart.
-
-Do not create a UA for ordinary product behavior, a machine-owned invariant, an
-implementation limitation, a historical workaround Ariel has not accepted, or
-a hypothetical agreement introduced merely to make implementation easier.
-
-A UA identifier is a current locator, not a permanent historical identity. If a
-UA moves to another authoritative owner, its identifier moves with that current
-ownership. Do not build aliases, tombstones, used-number histories, redirects,
-or other machinery whose purpose is reconstructing old UA identifiers.
-
-For agents: do not invent a UA, broaden one Ariel made, or turn a preference,
-fallback, or accepted manual boundary into a stronger obligation.
-
-In the current AutoHotkey pilot, detailed UA writing, placement, identifier, and
-movement rules belong in `design/README.md` under `## User Agreements`; actual
-UAs belong in the authoritative current behavior owners they govern. Commit-time
-UA reconciliation belongs in the project's existing Design reconciliation path.
+In the AutoHotkey pilot, `design/README.md` → `User Agreements` is the sole detailed authority for what qualifies, agreement wording, location, identification, individual approval and maintenance. Actual UAs live beside the applicable authoritative intended behavior. The current approved agreement binds that design until the user deliberately changes or withdraws it; it does not prohibit proposing a better approach.
 
 ### Project Proven Solutions Library
 
