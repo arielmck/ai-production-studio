@@ -94,8 +94,9 @@ only content is the absolute import of that canonical file. Codex has no
 reliable import mechanism, so `C:\Users\ariel\.codex\AGENTS.md` carries a
 marked synchronized copy of the authority's rules outside its marked on-demand
 section. That section currently contains
-`Preserve requirements through design and completion` and
-`Investigate fully, then challenge and reassess the whole solution`. Codex's
+`Preserve requirements through design and completion`,
+`Investigate fully, then challenge and reassess the whole solution`, and
+`Prevention-first assessment and instruction conflicts`. Codex's
 authority instruction directs it to consult that section before a material
 design change or a journey or feature completion. The existing
 project-conventions regression checks the marked-section structure, compares
