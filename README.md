@@ -19,7 +19,7 @@ Each is listed by its GitHub name and the local folder that holds it, because th
 
 ## Documentation
 
-Project-wide documentation is located in `design/`.
+Project-wide design documentation is located in `design/`. Studio-wide ledgers are located in `ledgers/`; its README identifies their respective responsibilities.
 
 Journey-specific documentation is located in `design/journeys/`.
 
